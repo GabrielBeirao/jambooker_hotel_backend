@@ -8,9 +8,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-/**
- * @author Simpson Alfred
- */
+
 @Entity
 @Getter
 @Setter

@@ -8,9 +8,7 @@ import org.apache.tomcat.util.codec.binary.Base64;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * @author Simpson Alfred
- */
+
 @Data
 @NoArgsConstructor
 public class RoomResponse {
@@ -27,7 +25,7 @@ public class RoomResponse {
         this.roomPrice = roomPrice;
     }
 
-    @SuppressWarnings("deprecation")
+    
     public RoomResponse(Long id, String roomType, BigDecimal roomPrice, boolean isBooked,
                         byte[] photoBytes , List<BookingResponse> bookings) {
         this.id = id;

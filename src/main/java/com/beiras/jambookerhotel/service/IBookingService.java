@@ -4,9 +4,7 @@ import com.beiras.jambookerhotel.model.BookedRoom;
 
 import java.util.List;
 
-/**
- * @author Simpson Alfred
- */
+
 
 public interface IBookingService {
     void cancelBooking(Long bookingId);

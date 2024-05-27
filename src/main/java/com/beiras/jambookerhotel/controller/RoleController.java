@@ -14,9 +14,7 @@ import java.util.List;
 
 import static org.springframework.http.HttpStatus.FOUND;
 
-/**
- * @author Simpson Alfred
- */
+
 
 @RestController
 @RequestMapping("/roles")

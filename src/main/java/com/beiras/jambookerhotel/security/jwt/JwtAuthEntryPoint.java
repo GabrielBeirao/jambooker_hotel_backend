@@ -16,9 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-/**
- * @author Simpson Alfred
- */
+
 
 @Component
 public class JwtAuthEntryPoint  implements AuthenticationEntryPoint {

@@ -27,9 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * @author Simpson Alfred
- */
 
 @RestController
 @RequiredArgsConstructor
@@ -62,7 +59,6 @@ public class RoomController {
         for (Room room : rooms) {
             byte[] photoBytes = roomService.getRoomPhotoByRoomId(room.getId());
             if (photoBytes != null && photoBytes.length > 0) {
-                @SuppressWarnings("deprecation")
                 String base64Photo = Base64.encodeBase64String(photoBytes);
                 RoomResponse roomResponse = getRoomResponse(room);
                 roomResponse.setPhoto(base64Photo);
@@ -112,7 +108,6 @@ public class RoomController {
         for (Room room : availableRooms){
             byte[] photoBytes = roomService.getRoomPhotoByRoomId(room.getId());
             if (photoBytes != null && photoBytes.length > 0){
-                @SuppressWarnings("deprecation")
                 String photoBase64 = Base64.encodeBase64String(photoBytes);
                 RoomResponse roomResponse = getRoomResponse(room);
                 roomResponse.setPhoto(photoBase64);

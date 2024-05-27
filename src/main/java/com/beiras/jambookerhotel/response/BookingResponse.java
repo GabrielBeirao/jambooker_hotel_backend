@@ -6,9 +6,6 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-/**
- * @author Simpson Alfred
- */
 
 @Data
 @AllArgsConstructor
