@@ -4,7 +4,7 @@ import com.beiras.jambookerhotel.security.jwt.JwtAuthEntryPoint;
 import com.beiras.jambookerhotel.security.user.HotelUserDetailsService;
 import lombok.RequiredArgsConstructor;
 
-import java.time.Duration;
+//import java.time.Duration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
