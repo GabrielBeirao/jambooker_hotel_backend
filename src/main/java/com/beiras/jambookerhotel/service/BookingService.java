@@ -57,8 +57,8 @@ public class BookingService implements IBookingService {
     }
 
     @Override
-    public BookedRoom findByBookingConfirmationCode(String confirmationCode) {
-        return bookingRepository.findByBookingConfirmationCode(confirmationCode)
+    public BookedRoom findByBookingConfirmationCode(String confirmationCode, Long userId) {
+        return bookingRepository.findByBookingConfirmationCode(confirmationCode, userId)
                 .orElseThrow(() -> new ResourceNotFoundException("No booking found with booking code :"+confirmationCode));
 
     }
@@ -85,8 +85,6 @@ public class BookingService implements IBookingService {
                                 && bookingRequest.getCheckOutDate().equals(bookingRequest.getCheckInDate()))
                 );
     }
-
-
 
 
 }
