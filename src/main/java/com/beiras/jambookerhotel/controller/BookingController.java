@@ -24,7 +24,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/bookings")
-@PreAuthorize("hasRole('ROLE_USER')")
 public class BookingController {
     private final IBookingService bookingService;
     private final IRoomService roomService;
@@ -82,6 +81,7 @@ public class BookingController {
         }
         return ResponseEntity.ok(bookingResponses);
     }
+
 
     @DeleteMapping("/booking/{bookingId}/delete")
     public void cancelBooking(@PathVariable Long bookingId) {
